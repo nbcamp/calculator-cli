@@ -36,7 +36,7 @@ while true {
 func printHelp(operators: [String] = []) {
     print("\n[Calculator CLI]\n")
     print("This command provides simple arithmetic functions.\n")
-    print(" · Usage: Enter operater and operand. e.g. +42 (^C to exit)")
+    print(" · Usage: Enter operater and operand. e.g. +42")
     print(" · Operators: \(calculator.operators.joined(separator: ", "))")
     print(" · Commands:")
     print("      help        Print this message")
