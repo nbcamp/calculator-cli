@@ -1,10 +1,10 @@
 import Foundation
 
-class Calculator<T: Arithmetic> {
+class Calculator<T: Calculable> {
     private var _result: T
-    private var _operators: [String: Calculable]
+    private var _operators: [String: Operator]
 
-    init(defaultValue: T? = nil, operators: [String: Calculable] = [:]) {
+    init(defaultValue: T? = nil, operators: [String: Operator] = [:]) {
         _result = defaultValue ?? Calculator.zero()
         _operators = operators
     }
@@ -13,11 +13,11 @@ class Calculator<T: Arithmetic> {
 
     var operators: [String] { Array(_operators.keys) }
 
-    func extend(_ name: String, _ operation: any Calculable) {
+    func extend(_ name: String, _ operation: any Operator) {
         _operators.updateValue(operation, forKey: name)
     }
 
-    func isSupported(_ name: String) -> Bool {
+    func has(_ name: String) -> Bool {
         return _operators.keys.contains(name)
     }
 

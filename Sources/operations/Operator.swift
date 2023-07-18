@@ -1,8 +1,8 @@
-protocol Calculable {
-    func operate<Operand: Arithmetic>(_ lhs: Operand, _ rhs: Operand) -> Operand
+protocol Operator {
+    func operate<Operand: Calculable>(_ lhs: Operand, _ rhs: Operand) -> Operand
 }
 
-protocol Arithmetic {
+protocol Calculable {
     static func +(lhs: Self, rhs: Self) -> Self
     static func -(lhs: Self, rhs: Self) -> Self
     static func *(lhs: Self, rhs: Self) -> Self
@@ -10,8 +10,8 @@ protocol Arithmetic {
     static func %(lhs: Self, rhs: Self) -> Self
 }
 
-extension Int: Arithmetic {}
-extension Double: Arithmetic {
+extension Int: Calculable {}
+extension Double: Calculable {
     static func %(lhs: Self, rhs: Self) -> Self {
         return Double(Int(lhs) % Int(rhs))
     }

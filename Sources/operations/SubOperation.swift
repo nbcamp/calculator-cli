@@ -1,5 +1,5 @@
-class SubOperation: Calculable {
-    func operate<Operand>(_ lhs: Operand, _ rhs: Operand) -> Operand where Operand : Arithmetic {
+class SubOperation: Operator {
+    func operate<Operand>(_ lhs: Operand, _ rhs: Operand) -> Operand where Operand : Calculable {
         return lhs - rhs
     }
 }
