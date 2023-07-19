@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "calculator-cli"
-               BuildableName = "calculator-cli"
-               BlueprintName = "calculator-cli"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "calc"
                BuildableName = "calc"
                BlueprintName = "calc"
@@ -54,16 +40,6 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       viewDebuggingEnabled = "No">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "calculator-cli"
-            BuildableName = "calculator-cli"
-            BlueprintName = "calculator-cli"
-            ReferencedContainer = "container:">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,22 +47,12 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "calculator-cli"
-            BuildableName = "calculator-cli"
-            BlueprintName = "calculator-cli"
-            ReferencedContainer = "container:">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "calculator-cli"
-            BuildableName = "calculator-cli"
-            BlueprintName = "calculator-cli"
+            BlueprintIdentifier = "calc"
+            BuildableName = "calc"
+            BlueprintName = "calc"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
