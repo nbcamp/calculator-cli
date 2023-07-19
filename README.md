@@ -7,15 +7,14 @@ A Tiny Cli Tool that provides very simple arithmetic functions.
 ```text
 [Calculator CLI]
 
-This command provides simple arithmetic functions.
+Provides simple arithmetic functions.
 
- · Usage: Enter operater and operand. e.g. +42
- · Operators: *, +, -, %, /
- · Commands:
-      help        Print this message
-      reset       Reset result to zero
-      exit        Exit this program
-
+- Usage: Enter operater and operand. e.g. +42
+- Operators: %, *, +, /, -
+- Commands:
+    help     Print this message
+    reset    Reset result to zero
+    exit     Exit this program
 
 Result: 0.0000
 » +32

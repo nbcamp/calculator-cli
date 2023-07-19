@@ -1,17 +1,14 @@
-// NAME: Calculator CLI
-// DESC: CLI tool to perform simple operations
-//
-// Created by Jinyong Park on 2023/07/17
+// Created by jinyongp on 2023/07/17
 
 typealias T = Double
 
 let calculator = Calculator<T>(
     operators: [
-        "+": AddOperation(),
-        "-": SubOperation(),
-        "*": MulOperation(),
-        "/": DivOperation(),
-        "%": ModOperation(),
+        "+": AddOperator(),
+        "-": SubOperator(),
+        "*": MulOperator(),
+        "/": DivOperator(),
+        "%": ModOperator(),
     ]
 )
 
@@ -35,12 +32,12 @@ while true {
 
 func printHelp(operators: [String] = []) {
     print("\n[Calculator CLI]\n")
-    print("This command provides simple arithmetic functions.\n")
-    print(" · Usage: Enter operater and operand. e.g. +42")
-    print(" · Operators: \(calculator.operators.joined(separator: ", "))")
-    print(" · Commands:")
-    print("      help        Print this message")
-    print("      reset       Reset result to zero")
-    print("      exit        Exit this program")
+    print("Provides simple arithmetic functions.\n")
+    print("- Usage: Enter operator and operand. e.g. +42")
+    print("- Operators: \(calculator.operators.joined(separator: ", "))")
+    print("- Commands:")
+    print("    help     Print this message")
+    print("    reset    Reset result to zero")
+    print("    exit     Exit this program")
     print()
 }
