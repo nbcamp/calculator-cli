@@ -26,7 +26,7 @@ while true {
 
     guard input.count >= 2 else { continue }
     guard let sign = input.first, calculator.has(String(sign)) else { continue }
-    guard let num = T(input[input.index(input.startIndex, offsetBy: 1)...]) else { continue }
+    guard let num = T(String(input.dropFirst())) else { continue }
     calculator.calculate(num, name: String(sign))
 }
 
